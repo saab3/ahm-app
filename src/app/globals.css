@@ -2,20 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+.banner-swiper .swiper-pagination-bullet {
+  opacity: 1 !important;
+  background-color: white !important;
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 16px !important;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.banner-swiper .swiper-pagination-bullet-active {
+  background-color: transparent !important;
+  border: 1px solid white;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.banner-swiper .swiper-pagination-bullets.swiper-pagination-vertical {
+  left: 10px !important;
+  right: auto !important;
+}
+
+body{
+  scroll-behavior: smooth;
 }
