@@ -11,7 +11,7 @@ import Head from "next/head";
 
 export const metadata = {
   title: "AHM",
-  description: "",
+  description: "AHM Description",
 };
 
 const cairoFont = Cairo({
@@ -25,12 +25,12 @@ const cairoFont = Cairo({
 export default function RootLayout({ children }) {
   return (
     <html dir="rtl" lang="ar">
-<head>
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-</head>
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+      </head>
       <body
         className={`${cairoFont.className} antialiased max-w-[1920px] mx-auto`}
       >
