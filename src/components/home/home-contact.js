@@ -13,8 +13,8 @@ const HomeContact = () => {
       className="grid w-11/12 grid-cols-12 gap-6 py-20 mx-auto max-md:py-10 max-sm:py-7 animate__animated animate__fadeInUp"
       id="section-contact-us"
     >
-      <div className="flex flex-col col-span-7 gap-10 max-md:gap-5 max-sm:gap-3 max-md:col-span-full">
-        <h2 className="text-2xl font-bold max-md:text-xl max-sm:text-lg">
+      <div className="flex flex-col col-span-7 gap-10 max-md:order-2 max-md:gap-5 max-sm:gap-3 max-md:col-span-full">
+        <h2 className="text-2xl font-bold max-md:hidden">
           ابق علي تواصل معنا !
         </h2>
         <p className="text-lg max-md:text-base max-sm:text-sm text-[#717171]">
@@ -76,7 +76,10 @@ const HomeContact = () => {
           </div>
         </div>
       </div>
-      <div className="col-span-5 max-md:col-span-full">
+      <div className="col-span-5 max-md:order-1 max-md:col-span-full">
+        <h2 className="hidden mb-5 font-bold max-md:block max-md:text-xl max-sm:text-lg">
+          ابق علي تواصل معنا !
+        </h2>
         <form
           className="flex flex-col gap-5"
           onSubmit={(e) => e.preventDefault()}
