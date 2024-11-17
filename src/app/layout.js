@@ -7,7 +7,6 @@ import Footer from "@/components/layout/footer";
 import "swiper/css";
 import "swiper/css/pagination";
 import "./globals.css";
-import Head from "next/head";
 
 export const metadata = {
   title: "AHM",

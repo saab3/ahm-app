@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .banner-swiper .swiper-pagination-bullet {
   opacity: 1 !important;
   background-color: white !important;
@@ -21,6 +20,13 @@
   right: auto !important;
 }
 
-body{
+@media (max-width: 640px) {
+  .banner-swiper .swiper-pagination-bullet {
+    width: 7px !important;
+    height: 7px !important;
+  }
+}
+
+body {
   scroll-behavior: smooth;
 }
