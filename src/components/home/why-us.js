@@ -17,7 +17,7 @@ const WhyUs = () => {
         <div className="grid w-11/12 grid-cols-12 gap-6 mx-auto max-md:gap-4">
           <div className="flex flex-col col-span-8 gap-8 max-md:gap-4 max-md:col-span-full">
             <h3 className="text-2xl font-bold max-md:text-xl max-sm:text-lg">
-              لماذا نحن ؟
+              عن اهم
             </h3>
             <p className="text-lg max-md:text-base max-sm:text-sm leading-loose text-[#717171]">
               تعمل مؤسسة الوليد بن حمد آل مبارك الخيرية على إحداث تأثير إيجابي
@@ -42,13 +42,6 @@ const WhyUs = () => {
         </div>
         <div className="w-44 max-md:hidden h-[80%] bg-[#01AB9D] rounded-md absolute -end-8 top-1/2 -translate-y-1/2"></div>
       </div>
-      <Image
-        src="/imgs/layout/wave-img.png"
-        className="object-contain w-full h-auto rotate-180"
-        height={20}
-        width={1920}
-        alt=""
-      />
     </section>
   );
 };
