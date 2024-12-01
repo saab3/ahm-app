@@ -15,20 +15,13 @@ const Footer = () => {
           <h4 className="text-xl max-md:text-lg max-sm:text-base mb-8 max-md:mb-6 font-bold text-center text-[#005750]">
             بعض من الجهات شاركت في إنجاح عملنا
           </h4>
-          <div className="grid grid-cols-6 gap-5 max-md:grid-cols-3 max-sm:grid-cols-2">
-            {[
-              "justice",
-              "human",
-              "education",
-              "municipal",
-              "commerce",
-              "information",
-            ].map((info) => (
+          <div className="flex flex-wrap items-center justify-center gap-5">
+            {["alyoum-1", "alyoum-2", "alyoum-3"].map((info) => (
               <Image
                 key={info}
                 loading="lazy"
-                src={`/imgs/layout/ministry-${info}.png`}
-                className="object-contain w-48 h-20 p-2 max-md:w-36 max-md:h-14 max-md:mx-auto"
+                src={`/imgs/layout/${info}.png`}
+                className="object-contain w-48 h-20 p-2 border max-md:w-36 max-md:h-14 max-md:mx-auto"
                 height={20}
                 width={1920}
                 alt=""

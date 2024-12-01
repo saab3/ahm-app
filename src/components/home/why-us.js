@@ -32,7 +32,7 @@ const WhyUs = () => {
           </div>
           <div className="col-span-4 overflow-hidden max-md:col-span-full">
             <Image
-              src="/imgs/home/family.png"
+              src="/imgs/home/uae-family.jpg"
               className="relative z-20 object-cover w-full h-auto"
               height={370}
               width={530}
