@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -16,16 +17,21 @@ const Footer = () => {
             بعض من الجهات شاركت في إنجاح عملنا
           </h4>
           <div className="flex flex-wrap items-center justify-center gap-5">
-            {["alyoum-1", "alyoum-2", "alyoum-3"].map((info) => (
-              <Image
-                key={info}
-                loading="lazy"
-                src={`/imgs/layout/${info}.png`}
-                className="object-contain w-48 h-20 p-2 border max-md:w-36 max-md:h-14 max-md:mx-auto"
-                height={20}
-                width={1920}
-                alt=""
-              />
+            {[
+              { name: "alyoum-1", link: "https://www.alyaum.com/" },
+              { name: "alyoum-2", link: "https://www.alyaumtraining.com/" },
+              { name: "alyoum-3", link: "https://www.sju.org.sa/" },
+            ].map((info, index) => (
+              <Link key={index} href={info?.link} target="_blank">
+                <Image
+                  loading="lazy"
+                  src={`/imgs/layout/${info?.name}.png`}
+                  className="object-contain w-48 h-20 p-2 border max-md:w-36 max-md:h-14 max-md:mx-auto"
+                  height={20}
+                  width={1920}
+                  alt=""
+                />
+              </Link>
             ))}
           </div>
         </div>
