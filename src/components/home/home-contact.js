@@ -2,7 +2,6 @@
 
 import { initialValues, validationSchema } from "../forms/contact-validation";
 import { ErrorMessage, Field, Form, Formik } from "formik";
-import ArrowDashIcon from "../icons/arrow-dash-icon";
 import FaceBookIcon from "../icons/facebook-icon";
 import InstagramIcon from "../icons/instagram-icon";
 import LinkedInIcon from "../icons/linked-in-icon";

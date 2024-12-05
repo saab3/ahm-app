@@ -38,10 +38,7 @@ export default function RootLayout({ children }) {
         <Nav />
         {children}
         <Footer />
-        <Toaster
-          position="bottom-center"
-          // dir={locale === 'ar' ? 'rtl' : 'ltr'}
-        />
+        <Toaster position="top-center" className="z-[999999999999999999999]" />
       </body>
     </html>
   );
