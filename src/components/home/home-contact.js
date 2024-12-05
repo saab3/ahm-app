@@ -90,7 +90,7 @@ const HomeContact = () => {
           validationSchema={validationSchema}
           onSubmit={async (values, { setSubmitting, resetForm }) => {
             try {
-              const res = await sendContactform(values);
+              await sendContactform(values);
               toast.success("تم إرسال الرسالة بنجاح");
               resetForm();
             } catch (error) {
