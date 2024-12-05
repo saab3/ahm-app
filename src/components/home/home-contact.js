@@ -10,6 +10,7 @@ import TwitterIcon from "../icons/twitter-icon";
 import YoutubeIcon from "../icons/youtube-icon";
 import { sendContactform } from "@/lib/api";
 import { toast } from "sonner";
+import RecaptchaForm from "../forms/recaptcha-form";
 
 const HomeContact = () => {
   return (
@@ -185,23 +186,7 @@ const HomeContact = () => {
                   />
                 </div>
               </div>
-              <button
-                type="submit"
-                className={`bg-[#01AB9D] text-white flex items-center ${
-                  !isSubmitting ? "justify-between" : "justify-center"
-                } max-sm:justify-center max-sm:gap-3 max-sm:p-1.5 w-44 max-sm:w-full rounded-md p-3`}
-              >
-                {!isSubmitting ? (
-                  <>
-                    <span className="text-lg font-bold max-sm:text-sm">
-                      إرسال
-                    </span>
-                    <ArrowDashIcon className="max-sm:size-4" />
-                  </>
-                ) : (
-                  <span className="border-t border-r border-white rounded-full size-4 animate-spin" />
-                )}
-              </button>
+              <RecaptchaForm {...{ isSubmitting }} />
             </Form>
           )}
         </Formik>
