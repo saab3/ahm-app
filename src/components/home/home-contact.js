@@ -1,11 +1,15 @@
 "use client";
 
+import { initialValues, validationSchema } from "../forms/contact-validation";
+import { ErrorMessage, Field, Form, Formik } from "formik";
 import ArrowDashIcon from "../icons/arrow-dash-icon";
 import FaceBookIcon from "../icons/facebook-icon";
 import InstagramIcon from "../icons/instagram-icon";
 import LinkedInIcon from "../icons/linked-in-icon";
 import TwitterIcon from "../icons/twitter-icon";
 import YoutubeIcon from "../icons/youtube-icon";
+import { sendContactform } from "@/lib/api";
+import { toast } from "sonner";
 
 const HomeContact = () => {
   return (
@@ -80,65 +84,127 @@ const HomeContact = () => {
         <h2 className="hidden mb-5 font-bold max-md:block max-md:text-xl max-sm:text-lg">
           ابق علي تواصل معنا !
         </h2>
-        <form
-          className="flex flex-col gap-5"
-          onSubmit={(e) => e.preventDefault()}
+        <Formik
+          initialValues={initialValues}
+          validationSchema={validationSchema}
+          onSubmit={async (values, { setSubmitting, resetForm }) => {
+            try {
+              const res = await sendContactform(values);
+              toast.success("تم إرسال الرسالة بنجاح");
+              resetForm();
+            } catch (error) {
+              console.log({ error });
+              toast.error("حدث خطأ, برجاء إعادة المحاولة");
+            } finally {
+              setSubmitting(false);
+            }
+          }}
         >
-          <div className="flex flex-col gap-3 max-sm:gap-1.5">
-            <label
-              htmlFor="name"
-              className="text-[17px] text-[#4D5D5D] max-md:text-sm"
-            >
-              الإسم
-            </label>
-            <input
-              id="name"
-              className="outline-none bg-[#EDF1F5] p-2 w-full rounded-md max-sm:p-1.5 max-sm:placeholder:text-sm max-sm:text-sm"
-            />
-          </div>
-          <div className="flex flex-col gap-3 max-sm:gap-1.5">
-            <label
-              htmlFor="email"
-              className="text-[17px] text-[#4D5D5D] max-md:text-sm"
-            >
-              البريد
-            </label>
-            <input
-              id="email"
-              type="email"
-              className="outline-none bg-[#EDF1F5] p-2 w-full rounded-md max-sm:p-1.5 max-sm:placeholder:text-sm max-sm:text-sm"
-            />
-          </div>
-          <div className="flex flex-col gap-3 max-sm:gap-1.5">
-            <label
-              htmlFor="subject"
-              className="text-[17px] text-[#4D5D5D] max-md:text-sm"
-            >
-              الموضوع
-            </label>
-            <input
-              id="subject"
-              className="outline-none bg-[#EDF1F5] p-2 w-full rounded-md max-sm:p-1.5 max-sm:placeholder:text-sm max-sm:text-sm"
-            />
-          </div>
-          <div className="flex flex-col gap-3 max-sm:gap-1.5">
-            <label
-              htmlFor="message"
-              className="text-[17px] text-[#4D5D5D] max-md:text-sm"
-            >
-              الرسالة
-            </label>
-            <textarea
-              id="message"
-              className="outline-none bg-[#EDF1F5] p-2 w-full rounded-md max-sm:p-1.5 max-sm:placeholder:text-sm max-sm:text-sm"
-              rows="5"
-            ></textarea>
-          </div>
-          <button className="bg-[#01AB9D] text-white flex items-center justify-between max-sm:justify-center max-sm:gap-3 max-sm:p-1.5 w-44 max-sm:w-full rounded-md p-3">
-            <span className="text-lg font-bold max-sm:text-sm">إرسال</span>
-            <ArrowDashIcon className="max-sm:size-4" />
-          </button>
-        </form>
+          {({ isSubmitting }) => (
+            <Form className="flex flex-col gap-5">
+              <div className="flex flex-col gap-3 max-sm:gap-1.5">
+                <label
+                  htmlFor="name"
+                  className="text-[17px] text-[#4D5D5D] max-md:text-sm"
+                >
+                  الإسم
+                </label>
+                <div className="flex flex-col gap-1">
+                  <Field
+                    id="name"
+                    name="name"
+                    className="outline-none bg-[#EDF1F5] p-2 w-full rounded-md max-sm:p-1.5 max-sm:placeholder:text-sm max-sm:text-sm"
+                  />
+                  <ErrorMessage
+                    name="name"
+                    component="p"
+                    className="text-sm text-red-600 max-lg:text-xs"
+                  />
+                </div>
+              </div>
+              <div className="flex flex-col gap-3 max-sm:gap-1.5">
+                <label
+                  htmlFor="email"
+                  className="text-[17px] text-[#4D5D5D] max-md:text-sm"
+                >
+                  البريد
+                </label>
+                <div className="flex flex-col gap-1">
+                  <Field
+                    id="email"
+                    name="email"
+                    type="email"
+                    className="outline-none bg-[#EDF1F5] p-2 w-full rounded-md max-sm:p-1.5 max-sm:placeholder:text-sm max-sm:text-sm"
+                  />
+                  <ErrorMessage
+                    name="email"
+                    component="p"
+                    className="text-sm text-red-600 max-lg:text-xs"
+                  />
+                </div>
+              </div>
+              <div className="flex flex-col gap-3 max-sm:gap-1.5">
+                <label
+                  htmlFor="subject"
+                  className="text-[17px] text-[#4D5D5D] max-md:text-sm"
+                >
+                  الموضوع
+                </label>
+                <div className="flex flex-col gap-1">
+                  <Field
+                    name="subject"
+                    id="subject"
+                    className="outline-none bg-[#EDF1F5] p-2 w-full rounded-md max-sm:p-1.5 max-sm:placeholder:text-sm max-sm:text-sm"
+                  />
+                  <ErrorMessage
+                    name="subject"
+                    component="p"
+                    className="text-sm text-red-600 max-lg:text-xs"
+                  />
+                </div>
+              </div>
+              <div className="flex flex-col gap-3 max-sm:gap-1.5">
+                <label
+                  htmlFor="message"
+                  className="text-[17px] text-[#4D5D5D] max-md:text-sm"
+                >
+                  الرسالة
+                </label>
+                <div className="flex flex-col gap-1">
+                  <Field
+                    as="textarea"
+                    name="message"
+                    id="message"
+                    className="outline-none bg-[#EDF1F5] p-2 w-full rounded-md max-sm:p-1.5 max-sm:placeholder:text-sm max-sm:text-sm"
+                    rows="5"
+                  />
+                  <ErrorMessage
+                    name="message"
+                    component="p"
+                    className="text-sm text-red-600 max-lg:text-xs"
+                  />
+                </div>
+              </div>
+              <button
+                type="submit"
+                className={`bg-[#01AB9D] text-white flex items-center ${
+                  !isSubmitting ? "justify-between" : "justify-center"
+                } max-sm:justify-center max-sm:gap-3 max-sm:p-1.5 w-44 max-sm:w-full rounded-md p-3`}
+              >
+                {!isSubmitting ? (
+                  <>
+                    <span className="text-lg font-bold max-sm:text-sm">
+                      إرسال
+                    </span>
+                    <ArrowDashIcon className="max-sm:size-4" />
+                  </>
+                ) : (
+                  <span className="border-t border-r border-white rounded-full size-4 animate-spin" />
+                )}
+              </button>
+            </Form>
+          )}
+        </Formik>
       </div>
     </section>
   );

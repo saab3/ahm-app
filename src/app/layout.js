@@ -1,4 +1,5 @@
 import { Cairo } from "next/font/google";
+import { Toaster } from "sonner";
 
 import Nav from "@/components/layout/nav";
 import Header from "@/components/layout/header";
@@ -37,6 +38,10 @@ export default function RootLayout({ children }) {
         <Nav />
         {children}
         <Footer />
+        <Toaster
+          position="bottom-center"
+          // dir={locale === 'ar' ? 'rtl' : 'ltr'}
+        />
       </body>
     </html>
   );

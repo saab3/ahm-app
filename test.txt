@@ -1,0 +1,11 @@
+Yesterday:  
+** alkhunaizan app 
+- update seven product sku home page 
+- update product sku home page 
+- update warranty in pdp page 
+- handle user drop down in navbar section 
+** ahm-app 
+- handle contact us 
+
+Today: 
+- continue working on ahm-app and alkhunaizan inshallah
