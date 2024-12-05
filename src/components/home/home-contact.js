@@ -12,6 +12,10 @@ import { sendContactform } from "@/lib/api";
 import { toast } from "sonner";
 
 const HomeContact = () => {
+  console.log({
+    user: process.env.NEXT_PUBLIC_USER_SENDER,
+    pass: process.env.NEXT_PUBLIC_PASS,
+  });
   return (
     <section
       className="grid w-11/12 grid-cols-12 gap-6 py-20 mx-auto max-md:py-10 max-sm:py-7 animate__animated animate__fadeInUp"
