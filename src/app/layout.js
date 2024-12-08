@@ -25,6 +25,7 @@ export default function RootLayout({ children }) {
   return (
     <html dir="rtl" lang="ar">
       <head>
+        <link rel="icon" href="/image.ico" />
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
