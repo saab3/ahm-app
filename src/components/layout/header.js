@@ -12,7 +12,9 @@ const Header = () => {
       <div className="flex items-center gap-4 max-md:gap-1">
         <div className="flex items-center gap-3 max-md:gap-1">
           <SMSIcon className="size-[18px] max-md:size-3.5" />
-          <span className="max-md:text-sm max-sm:text-xs">seo@admin.com</span>
+          <span className="max-md:text-sm max-sm:text-xs">
+            info@ahmfoundation.net
+          </span>
         </div>
         <span className="text-[#D6D1D1]"> | </span>
         <div className="flex items-center gap-3 max-md:gap-1">
