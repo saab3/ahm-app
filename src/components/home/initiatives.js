@@ -1,8 +1,5 @@
-"use client";
-
-import { InnovationData } from "@/constants/home";
 import Image from "next/image";
-import { Swiper, SwiperSlide } from "swiper/react";
+import InitiativeSlider from "./initiative-slider";
 
 const Initiatives = () => {
   return (
@@ -18,46 +15,25 @@ const Initiatives = () => {
         width={471}
         alt="circle Img"
       />
-      <div className="relative z-50 grid w-11/12 grid-cols-12 gap-6 mx-auto">
-        <div className="flex flex-col col-span-5 gap-8 max-md:col-span-full max-md:gap-4">
-          <h3 className="text-2xl font-bold max-md:text-xl">المبادرات</h3>
-          <p className="text-lg max-md:text-base max-sm:text-sm leading-loose text-[#717171]">
-            نقدم في جمعيتنا الدعم للمجتمع السعودي عبر مجالات متعددة تشمل
-            الإغاثة، والتعليم، والرعاية الصحية، والإسكان، لنساهم في تحسين جودة
-            الحياة وتعزيز التنمية المستدامة.
-          </p>
-        </div>
-        <div className="col-span-7 max-md:col-span-full">
-          <Swiper
-            spaceBetween={10}
-            breakpoints={{ 768: { spaceBetween: 25 } }}
-            slidesPerView="auto"
-          >
-            {InnovationData.map((info, index) => (
-              <SwiperSlide
-                key={index}
-                className="w-[373px] h-80 max-md:w-72 max-sm:w-60 max-md:h-40"
-              >
-                <div className="relative overflow-hidden size-full">
-                  <div className="absolute top-0 z-50 flex flex-col items-center justify-center gap-3 px-8 bg-black rounded-md max-md:gap-2 start-0 size-full bg-opacity-60">
-                    <h5 className="text-lg font-bold text-center text-white max-md:text-base">
-                      {info?.title}
-                    </h5>
-                    <p className="text-center text-white max-md:text-sm">
-                      {info?.description}
-                    </p>
-                  </div>
-                  <Image
-                    src={info?.image}
-                    className="rounded-md size-full"
-                    height={320}
-                    width={373}
-                    alt=""
-                  />
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
+      <div className="relative z-50 w-11/12 mx-auto overflow-hidden">
+        <div className="flex flex-col col-span-12 gap-16 max-md:col-span-full max-md:gap-8">
+          <div className="flex flex-col gap-8 max-md:gap-4">
+            <h3 className="text-2xl font-bold max-md:text-xl">مبادراتنا </h3>
+            <p className="text-lg max-md:text-base max-sm:text-sm leading-loose text-[#717171]">
+              دعمت (أهم) البرنامج التدريبي (تطوير كفاءات ومهارات الصحفيين
+              والإعلاميين) الذي عملت من خلاله على تحقيق أحد أهم أهداف المؤسسة
+              المتمثل في إحداث تأثير إيجابي ومستدام في المجتمع، وتعزيز التنمية
+              المستدامة لأفراده، من خلال دعم المبادرات التي تساهم في تحسين جودة
+              الحياة والتركيز على تعزيز الابتكار والتميز.
+            </p>
+          </div>
+          <div className="flex flex-col gap-4 md:gap-8">
+            <h3 className="font-bold text-center max-md:text-xs">
+              قامت (أهم) خلال العام 2024م بدعم عدد من الجمعيات الخيرية بالتعاون
+              والتنسيق مع منصة احسان، والجهات هي:
+            </h3>
+            <InitiativeSlider />
+          </div>
         </div>
       </div>
     </section>

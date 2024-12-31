@@ -68,8 +68,8 @@ export default function Home() {
     <main>
       <HomeSlider />
       <WhyUs />
-      <VisionValues />
       <Initiatives />
+      <VisionValues />
       <HomeContact />
     </main>
   );
