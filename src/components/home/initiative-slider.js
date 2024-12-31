@@ -13,13 +13,16 @@ const InitiativeSlider = () => {
       autoplay={{ delay: 3000 }}
       slidesPerView="auto"
       centeredSlides
+      dir="rtl"
+      key="ar"
       loop
     >
       {IntiativesSliderData.map((item, info) => (
-        <SwiperSlide key={info} className="w-auto">
-          <button className="py-2 px-4 bg-[#01AB9D] text-white rounded-full text-xs md:text-sm">
-            {item}
-          </button>
+        <SwiperSlide
+          key={info}
+          className="w-auto py-2 px-4 bg-[#01AB9D] text-white rounded-full "
+        >
+          <button className="text-xs md:text-sm">{item}</button>
         </SwiperSlide>
       ))}
     </Swiper>

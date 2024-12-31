@@ -15,29 +15,32 @@ const VisionValues = () => {
         id="section-vision"
       >
         <div className="relative z-50 grid w-11/12 grid-cols-12 gap-6 mx-auto ">
-          <div className="flex flex-col col-span-6 gap-8 max-md:gap-4 max-md:col-span-full">
-            <h3 className="text-2xl font-bold max-md:text-xl max-sm:text-lg">
-              الرؤية
-            </h3>
-            <ul className="flex flex-col gap-5 list-disc list-inside max-sm:gap-3">
-              <li className="text-lg max-md:text-base max-sm:text-xs text-[#717171]">
-                تحقيق التنمية المستدامة وتعزيز الرفاه الاجتماعي من خلال دعم
-                المبادرات الاجتماعية المبتكرة.
-              </li>
-            </ul>
+          <div className="flex flex-col col-span-6 gap-6 max-md:col-span-full">
+            <div className="flex flex-col gap-8 max-md:gap-4">
+              <h3 className="text-2xl font-bold max-md:text-xl max-sm:text-lg">
+                الرؤية
+              </h3>
+              <ul className="flex flex-col gap-5 list-disc list-inside max-sm:gap-3">
+                <li className="text-lg max-md:text-base max-sm:text-xs text-[#717171]">
+                  تحقيق التنمية المستدامة وتعزيز الرفاه الاجتماعي من خلال دعم
+                  المبادرات الاجتماعية المبتكرة.
+                </li>
+              </ul>
+            </div>
+            <div className="flex flex-col col-span-6 gap-8 max-md:gap-4 max-md:col-span-full">
+              <h3 className="text-2xl font-bold max-md:text-xl max-sm:text-lg">
+                الرسالة
+              </h3>
+              <ul className="flex flex-col gap-5 list-disc list-inside max-sm:gap-3">
+                <li className="text-lg max-md:text-base max-sm:text-xs text-[#717171]">
+                  العمل على تعزيز ودعم الابتكار والاستدامة لتحقيق تأثير إيجابي
+                  ودائم على حياة الأفراد والمجتمعات.
+                </li>
+              </ul>
+            </div>
           </div>
+
           <div className="flex flex-col col-span-6 gap-8 max-md:gap-4 max-md:col-span-full">
-            <h3 className="text-2xl font-bold max-md:text-xl max-sm:text-lg">
-              الرسالة
-            </h3>
-            <ul className="flex flex-col gap-5 list-disc list-inside max-sm:gap-3">
-              <li className="text-lg max-md:text-base max-sm:text-xs text-[#717171]">
-                العمل على تعزيز ودعم الابتكار والاستدامة لتحقيق تأثير إيجابي
-                ودائم على حياة الأفراد والمجتمعات.
-              </li>
-            </ul>
-          </div>
-          <div className="flex flex-col gap-8 col-span-full max-md:gap-4 max-md:col-span-full">
             <h3 className="text-2xl font-bold max-md:text-xl max-sm:text-lg">
               قيم العمل
             </h3>
