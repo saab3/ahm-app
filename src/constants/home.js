@@ -69,13 +69,40 @@ export const HomeSliderData = [
 ];
 
 export const IntiativesSliderData = [
-  "جمعية البر الخيرية بالمنطقة الشرقية",
-  "جمعية إيفاء لرعاية ذوي الإعاقة بالمنطقة الشرقية",
-  "جمعية البر بحفر الباطن",
-  "جمعية البر الخيرية بقرية العليا",
-  "اللجنة الوطنية لرعاية السجناء والمفرج عنهم وأسرهم بالمنطقة الشرقية",
-  "جمعية همم لدعم أسر ذوي الإعاقة بالمنطقة الشرقية",
-  "جمعية حريملاء الخيرية",
-  "جمعية عنك الخيرية",
-  "جمعية البر الخيرية بالخفجي",
+  {
+    title: "جمعية البر الخيرية بالمنطقة الشرقية",
+    img: "https://www.alberlive.net/Themes/images/newLogo.png",
+  },
+  {
+    img: "https://psrc.org.sa/wp-content/uploads/2023/03/eefaa-Logo-newLastS.png",
+    title: "جمعية إيفاء لرعاية ذوي الإعاقة بالمنطقة الشرقية",
+  },
+  {
+    title: "جمعية البر بحفر الباطن",
+    img: "https://www.birhafer.org.sa/rafed/uploads/system/widelogow.png",
+  },
+  {
+    title: "جمعية البر الخيرية بقرية العليا",
+    img: "https://albirrolya.org/h/wp-content/uploads/2023/10/newlogo1.png",
+  },
+  {
+    title: "اللجنة الوطنية لرعاية السجناء والمفرج عنهم وأسرهم بالمنطقة الشرقية",
+    img: "https://trahum.org/_nuxt/img/logo-01.4436ad5.png",
+  },
+  {
+    title: "جمعية همم لدعم أسر ذوي الإعاقة بالمنطقة الشرقية",
+    img: "https://hemam.org.sa/sites/all/themes/newTheme/images/logo.png",
+  },
+  {
+    title: "جمعية حريملاء الخيرية",
+    img: "https://gmeht-huremla.sa/wp-content/uploads/2021/05/%D8%B4%D8%B9%D8%A7%D8%B1-%D8%A7%D9%84%D8%AC%D9%85%D8%B9%D9%8A%D8%A9.jpg",
+  },
+  {
+    title: "جمعية عنك الخيرية",
+    img: "https://www.anak-social.org.sa/rafed/uploads/system/project_65886fbc44969.png",
+  },
+  {
+    title: "جمعية البر الخيرية بالخفجي",
+    img: "https://www.bir-alkhafji.org.sa/rafed/uploads/system/widelogo.png",
+  },
 ];
