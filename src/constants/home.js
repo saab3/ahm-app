@@ -99,7 +99,7 @@ export const IntiativesSliderData = [
   },
   {
     title: "جمعية عنك الخيرية",
-    img: "https://www.anak-social.org.sa/rafed/uploads/system/project_65886fbc44969.png",
+    img: "/imgs/home/image (2).png",
   },
   {
     title: "جمعية البر الخيرية بالخفجي",
