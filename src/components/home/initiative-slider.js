@@ -21,13 +21,13 @@ const InitiativeSlider = () => {
       {IntiativesSliderData.map((item, info) => (
         <SwiperSlide
           key={info}
-          className="h-full p-2 md:p-4 md:pb-2.5 border-2 bg-[#01AB9D] border-[#01AB9D] text-white rounded-md w-44 md:w-60"
+          className="p-2 md:p-4 md:pb-2.5 border-2 bg-[#01AB9D] border-[#01AB9D] text-white rounded-md size-44 md:size-64"
         >
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col justify-between h-full gap-2">
             <Image
               loading="lazy"
               src={item.img}
-              className="object-contain mx-auto max-md:size-16 md:size-20"
+              className="object-contain w-full m-auto h-1/2"
               height={150}
               width={150}
               alt="Img!"
