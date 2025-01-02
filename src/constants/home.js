@@ -95,7 +95,7 @@ export const IntiativesSliderData = [
   },
   {
     title: "جمعية حريملاء الخيرية",
-    img: "https://gmeht-huremla.sa/wp-content/uploads/2021/05/%D8%B4%D8%B9%D8%A7%D8%B1-%D8%A7%D9%84%D8%AC%D9%85%D8%B9%D9%8A%D8%A9.jpg",
+    img: "/imgs/home/no_bg_image (1).png",
   },
   {
     title: "جمعية عنك الخيرية",
