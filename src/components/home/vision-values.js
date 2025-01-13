@@ -52,7 +52,7 @@ const VisionValues = () => {
               </li>
               <li className="text-lg max-md:text-base max-sm:text-xs text-[#717171]">
                 <span className="font-bold">التميز والابتكار:</span> السعي نحو
-                التميز في جميع البرامج والابتكار في تقديم الحلول
+                التميز في جميع البرامج والابتكار في تقديم الحلول.
               </li>
               <li className="text-lg max-md:text-base max-sm:text-xs text-[#717171]">
                 <span className="font-bold">الشفافية والنزاهة:</span> العمل
@@ -75,7 +75,7 @@ const VisionValues = () => {
             <ul className="flex flex-col gap-3 max-sm:gap-2">
               <li className="text-lg max-md:text-base max-sm:text-xs text-[#717171]">
                 قبل استعراض الأهداف الاستراتيجية تم اعتماد معايير SMART في صياغة
-                هذه الأهداف لضمان تحقيقها بفعالية وكفاءة.
+                هذه الأهداف لضمان تحقيقها بفعالية وكفاءة.{" "}
               </li>
               <li className="text-lg max-md:text-base max-sm:text-xs text-[#717171]">
                 معايير SMART تعني أن الأهداف محددة Specific قابلة للقياس
@@ -106,7 +106,7 @@ const VisionValues = () => {
                 ومبادرات تهدف إلى تحقيق نتائج طويلة الأمد وتعزيز التنمية
                 المجتمعية لضمان وصول الخدمات والدعم إلى الفئات الأكثر احتياجًا
                 في المجتمع مع مراعاة تحقيق الشمولية وتلبية احتياجات مختلف
-                الفئات.
+                الفئات.{" "}
               </li>
               <li className="text-lg max-md:text-base max-sm:text-xs text-[#717171]">
                 بالإضافة إلى ذلك تم إعطاء أولوية خاصة للابتكار في الحلول
