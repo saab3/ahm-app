@@ -87,16 +87,16 @@ const VisionValues = () => {
                 وتساهم بشكل مباشر في تحقيق رؤية ورسالة المؤسسة بطريقة ملموسة
                 ومستدامة.
               </li>
-              {/* <li>
+              <li>
                 <Image
                   loading="lazy"
-                  src="/imgs/home/goals.png"
-                  className="w-full h-auto border"
+                  src="/imgs/home/الخطة-الاستراتيجية-مؤسسة-الوليد-بن-حمد-آل-مبارك-الخيرية.webp"
+                  className="w-full h-full border"
                   height={500}
                   width={500}
                   alt="circle Img"
                 />
-              </li> */}
+              </li>
               <li className="text-lg max-md:text-base max-sm:text-xs text-[#717171]">
                 لقد تم اتباع مجموعة من المعايير والأسس التي تعكس التزام المؤسسة
                 بتحقيق تأثير إيجابي ومستدام على المجتمع.
