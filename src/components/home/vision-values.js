@@ -91,7 +91,7 @@ const VisionValues = () => {
                 <Image
                   loading="lazy"
                   src="/imgs/home/-_.pptx.jpg"
-                  className="w-full h-full border"
+                  className="object-contain w-full h-auto lg:w-1/2"
                   height={500}
                   width={500}
                   alt="circle Img"
