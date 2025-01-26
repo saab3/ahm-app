@@ -90,7 +90,7 @@ const VisionValues = () => {
               <li>
                 <Image
                   loading="lazy"
-                  src="/imgs/home/الخطة-الاستراتيجية-مؤسسة-الوليد-بن-حمد-آل-مبارك-الخيرية.webp"
+                  src="/imgs/home/-_.pptx.jpg"
                   className="w-full h-full border"
                   height={500}
                   width={500}
