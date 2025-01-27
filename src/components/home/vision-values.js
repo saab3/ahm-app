@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 
 const VisionValues = () => {
@@ -88,10 +89,10 @@ const VisionValues = () => {
                 ومستدامة.
               </li>
               <li>
-                <Image
+                <img
                   loading="lazy"
-                  src="/imgs/home/-_.pptx.jpg"
-                  className="object-contain w-full h-auto lg:w-1/2"
+                  src="/imgs/home/-_.jpg"
+                  className="object-contain w-full h-auto"
                   height={500}
                   width={500}
                   alt="circle Img"
