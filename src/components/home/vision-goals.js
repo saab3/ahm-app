@@ -8,13 +8,13 @@ import TargetIcon from "../icons/target-icon";
 const VisionGoals = () => {
   return (
     <div className="grid grid-cols-1 max-lg:gap-5 lg:grid-cols-2">
-      <div className="flex items-center justify-between">
-        <div className="relative flex items-center justify-center rounded-full size-28 lg:size-40">
+      <div className="flex items-center justify-between max-lg:gap-10">
+        <div className="relative flex items-center justify-center rounded-full max-lg:flex-1 lg:size-40">
           <TargetIcon
             style={{ transform: "rotate(250deg)" }}
             className="text-orange-700 size-28 lg:size-36"
           />
-          <div className="absolute top-0 left-0 z-10 -rotate-45 border-2 border-transparent rounded-full size-full max-lg:border-none border-t-zinc-300 border-l-zinc-300">
+          <div className="absolute top-0 left-0 z-10 -rotate-45 border-2 border-transparent rounded-full max-lg:hidden size-full max-lg:border-none border-t-zinc-300 border-l-zinc-300">
             <div className="relative before:size-5 max-lg:after:hidden max-lg:before:hidden after:size-5 before:bg-zinc-300 after:bg-zinc-300 before:rounded-full after:rounded-full before:absolute after:absolute before:top-full after:top-0 after:mt-2 after:ms-3 before:-mt-7 before:-ms-8 after:rotate-0 before:rotate-0 before:start-full after:start-0 size-full"></div>
           </div>
           <div className="max-lg:hidden absolute top-0 w-10 h-0.5 end-4 bg-zinc-300">
@@ -72,9 +72,9 @@ const VisionGoals = () => {
             </div>
           </div>
         </div>
-        <div className="relative flex flex-col justify-between gap-2 max-lg:flex-1 lg:gap-5">
-          <div className="flex">
-            <div className="relative z-20 flex items-center w-3/4 gap-2 px-4 py-1 bg-blue-800 rounded-full lg:py-2 max-lg:ms-auto">
+        <div className="relative flex flex-col justify-between gap-2 lg:gap-5">
+          <div className="lg:flex">
+            <div className="relative z-20 flex items-center gap-2 px-4 py-1 bg-blue-800 rounded-full lg:w-3/4 lg:py-2 max-lg:ms-auto">
               <span className="flex items-center justify-center bg-white rounded-full size-6">
                 <SettingsIcon className="size-4" />
               </span>
@@ -84,8 +84,8 @@ const VisionGoals = () => {
             </div>
             <div className="max-lg:hidden relative z-50 flex-1 h-full py-3 bg-[#EDF1F5]"></div>
           </div>
-          <div className="flex">
-            <div className="relative flex items-center max-lg:ms-auto w-3/4 gap-2 px-4 py-1 z-20 lg:py-2 bg-orange-600 rounded-full ms-[12.5%]">
+          <div className="lg:flex">
+            <div className="relative flex items-center max-lg:ms-auto lg:w-3/4 gap-2 px-4 py-1 z-20 lg:py-2 bg-orange-600 rounded-full ms-[12.5%]">
               <span className="flex items-center justify-center bg-white rounded-full size-6">
                 <SettingIcon className="size-4" />
               </span>
@@ -95,7 +95,7 @@ const VisionGoals = () => {
             </div>
             <div className="max-lg:hidden relative z-50 flex-1 h-full py-3 bg-[#EDF1F5]"></div>
           </div>
-          <div className="relative z-20 flex items-center w-3/4 gap-2 px-4 py-1 bg-pink-800 rounded-full lg:py-2 ms-auto">
+          <div className="relative z-20 flex items-center gap-2 px-4 py-1 bg-pink-800 rounded-full lg:w-3/4 lg:py-2 lg:ms-auto">
             <span className="flex items-center justify-center bg-white rounded-full size-6">
               <AskIcon className="size-4" />
             </span>
@@ -103,7 +103,7 @@ const VisionGoals = () => {
               توفير الدعم المالي والعيني للأسر والأفراد الأكثر احتياجاً
             </span>
           </div>
-          <div className="relative z-20 flex items-center w-3/4 gap-2 px-4 py-1 rounded-full lg:py-2 ms-auto bg-emerald-700">
+          <div className="relative z-20 flex items-center gap-2 px-4 py-1 rounded-full lg:w-3/4 lg:py-2 lg:ms-auto bg-emerald-700">
             <span className="flex items-center justify-center bg-white rounded-full size-6">
               <FolderIcon className="size-4" />
             </span>
@@ -111,8 +111,8 @@ const VisionGoals = () => {
               تعزيز الرعاية الصحية للفئات الضعيفة والمحتاجة
             </span>
           </div>
-          <div className="flex">
-            <div className="relative flex items-center w-3/4 max-lg:ms-auto ms-[12.5%] z-20 gap-2 px-4 py-1 lg:py-2 bg-sky-700 rounded-full">
+          <div className="lg:flex">
+            <div className="relative flex items-center lg:w-3/4 max-lg:ms-auto ms-[12.5%] z-20 gap-2 px-4 py-1 lg:py-2 bg-sky-700 rounded-full">
               <span className="flex items-center justify-center bg-white rounded-full size-6">
                 <TargetIcon className="size-4" />
               </span>
@@ -122,8 +122,8 @@ const VisionGoals = () => {
             </div>
             <div className="max-lg:hidden relative z-50 flex-1 h-full py-3 bg-[#EDF1F5]"></div>
           </div>
-          <div className="flex">
-            <div className="relative z-20 flex items-center w-3/4 gap-2 px-4 py-1 bg-blue-900 rounded-full lg:py-2 max-lg:ms-auto">
+          <div className="lg:flex">
+            <div className="relative z-20 flex items-center gap-2 px-4 py-1 bg-blue-900 rounded-full lg:w-3/4 lg:py-2 max-lg:ms-auto">
               <span className="flex items-center justify-center bg-white rounded-full size-6">
                 <SettingIcon className="size-4" />
               </span>
