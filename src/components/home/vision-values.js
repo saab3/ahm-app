@@ -1,5 +1,5 @@
-/* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
+import VisionGoals from "./vision-goals";
 
 const VisionValues = () => {
   return (
@@ -73,55 +73,46 @@ const VisionValues = () => {
             <h3 className="text-2xl font-bold max-md:text-xl max-sm:text-lg">
               الأهداف
             </h3>
-            <ul className="flex flex-col gap-3 max-sm:gap-2">
-              <li className="text-lg max-md:text-base max-sm:text-xs text-[#717171]">
+            <div className="flex flex-col gap-3 max-sm:gap-2">
+              <p className="text-lg max-md:text-base max-sm:text-xs text-[#717171]">
                 قبل استعراض الأهداف الاستراتيجية تم اعتماد معايير SMART في صياغة
                 هذه الأهداف لضمان تحقيقها بفعالية وكفاءة.{" "}
-              </li>
-              <li className="text-lg max-md:text-base max-sm:text-xs text-[#717171]">
+              </p>
+              <p className="text-lg max-md:text-base max-sm:text-xs text-[#717171]">
                 معايير SMART تعني أن الأهداف محددة Specific قابلة للقياس
                 Measurable قابلة للتحقيق Achievable ذات صلة برؤية المؤسسة
                 Relevant ومحددة بإطار زمنيTime-bound .
-              </li>
-              <li className="text-lg max-md:text-base max-sm:text-xs text-[#717171]">
+              </p>
+              <p className="text-lg max-md:text-base max-sm:text-xs text-[#717171]">
                 إستخدام هذه المعايير يضمن أن الأهداف تكون واضحة وقابلة للتنفيذ
                 وتساهم بشكل مباشر في تحقيق رؤية ورسالة المؤسسة بطريقة ملموسة
                 ومستدامة.
-              </li>
-              <li>
-                <img
-                  loading="lazy"
-                  src="/imgs/home/-_.jpg"
-                  className="object-contain w-full h-auto"
-                  height={500}
-                  width={500}
-                  alt="circle Img"
-                />
-              </li>
-              <li className="text-lg max-md:text-base max-sm:text-xs text-[#717171]">
+              </p>
+              <VisionGoals />
+              <p className="text-lg max-md:text-base max-sm:text-xs text-[#717171]">
                 لقد تم اتباع مجموعة من المعايير والأسس التي تعكس التزام المؤسسة
                 بتحقيق تأثير إيجابي ومستدام على المجتمع.
-              </li>
-              <li className="text-lg max-md:text-base max-sm:text-xs text-[#717171]">
+              </p>
+              <p className="text-lg max-md:text-base max-sm:text-xs text-[#717171]">
                 أولى هذه المعايير هو الاستدامة حيث تم التركيز على تبني مشاريع
                 ومبادرات تهدف إلى تحقيق نتائج طويلة الأمد وتعزيز التنمية
                 المجتمعية لضمان وصول الخدمات والدعم إلى الفئات الأكثر احتياجًا
                 في المجتمع مع مراعاة تحقيق الشمولية وتلبية احتياجات مختلف
                 الفئات.{" "}
-              </li>
-              <li className="text-lg max-md:text-base max-sm:text-xs text-[#717171]">
+              </p>
+              <p className="text-lg max-md:text-base max-sm:text-xs text-[#717171]">
                 بالإضافة إلى ذلك تم إعطاء أولوية خاصة للابتكار في الحلول
                 الاجتماعية والتكنولوجية كوسيلة فعالة للتغلب على التحديات
                 المجتمعية. كما تؤمن المؤسسة بأهمية الشراكات والتعاون مع مختلف
                 الجهات لتعظيم الأثر والوصول إلى الأهداف المنشودة. وأخيرًا تم
                 التأكيد على مبدأ الشفافية والمصداقية، لضمان تنفيذ الأنشطة
                 والمشاريع بأسلوب يحقق الثقة مع المجتمع والشركاء.
-              </li>
-              <li className="text-lg max-md:text-base max-sm:text-xs text-[#717171]">
+              </p>
+              <p className="text-lg max-md:text-base max-sm:text-xs text-[#717171]">
                 هذه الأسس مجتمعة هي التي بنيت عليها رؤية المؤسسة ورسالتها
                 وقيمها، لتعكس التزامنا المستمر نحو مستقبل أكثر استدامة.
-              </li>
-            </ul>
+              </p>
+            </div>
           </div>
         </div>
         <Image
