@@ -33,8 +33,8 @@ const HomeContact = () => {
             <div className="flex flex-col col-span-7 gap-5 max-md:col-span-full">
               <h4 className="text-lg font-bold max-md:text-base">العنوان</h4>
               <p className="text-lg leading-loose max-md:text-base max-sm:text-sm max-sm:-mt-1">
-                الإدارة العامـة : جـدة - حي الروضـة - شارع الأمير محمد بن
-                عبدالعزيز - ص.ب 14888 - جــــدة 21434
+                المملكة العربية السعودية – الدمام حي الحسام - طريق الملك فهد رقم
+                المبنى 6971 – الرمز البريدي 34223
               </p>
             </div>
             <div className="flex flex-col col-span-5 gap-5 max-md:col-span-full">
