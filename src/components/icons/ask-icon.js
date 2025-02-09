@@ -1,6 +1,6 @@
 const AskIcon = (props) => (
   <svg
-    fill="#000000"
+    fill="currentColor"
     height="800px"
     width="800px"
     id="Layer_1"

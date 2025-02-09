@@ -6,6 +6,7 @@ const SettingIcon = (props) => (
     width={16}
     height={16}
     aria-hidden="true"
+    fill="currentColor"
     className="$w-[1em] $h-[1em] $fill-current $text-xl $text-grayEbony"
     {...props}
   >
