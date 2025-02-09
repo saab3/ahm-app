@@ -1,8 +1,8 @@
 import AskIcon from "@/components/icons/ask-icon";
 import FolderIcon from "@/components/icons/folder-icon";
+import LastIcon from "@/components/icons/last-icon";
 import SettingIcon from "@/components/icons/setting-icon";
 import SettingsIcon from "@/components/icons/settings-icon";
-import TargetIcon from "@/components/icons/target-icon";
 
 export const goalsData = [
   {
@@ -30,7 +30,7 @@ export const goalsData = [
       "يسعى هذا المعيار إلى توفير الرعاية الصحية المجانية أو المدعومة للفئات الضعيفة من خلال تقديم دعم مباشر للمرافق الصحية.",
   },
   {
-    icon: <TargetIcon />,
+    icon: <LastIcon />,
     title: "دعم التعليم والتدريب المهني للشباب والعاطلين عن العمل",
     description:
       "يسعى هذا المعيار إلى تقديم برامج تعليمية وتدريبية لتحسين مهارات الشباب وزيادة فرص توظيفهم في المستقبل.",
