@@ -53,7 +53,7 @@ const HomeContact = () => {
                 البريد الالكتروني
               </h4>
               <p className="text-lg max-md:text-base max-sm:text-sm max-sm:-mt-2">
-                ceo@admin.com
+                info@ahmfoundation.net
               </p>
             </div>
             <div className="flex flex-col col-span-5 gap-5 max-md:col-span-full">
